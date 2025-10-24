@@ -3,177 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groove - Vintage Music Collection</title>
+    <title>Stringy - Retrowave Store</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Background -->
-    <div class="bg-gradient"></div>
-
     <div class="container">
-        <!-- Header -->
-        <header>
+        <header class="header">
             <div class="logo">
-                <span class="logo-produced">Produced by</span>
-                <span class="logo-main">Winamp</span>
+                <span class="produced">Produced by</span>
+                <span class="brand">Wimangp</span>
             </div>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#music">Músicas</a>
-                <a href="#artists">Artistas</a>
-                <a href="#about">Sobre</a>
-            </nav>
-            <div class="header-icons">
-                <div class="icon-btn">🔍</div>
-                <div class="icon-btn">❤️</div>
-                <div class="icon-btn">🎵</div>
+            <div class="award">
+                <span class="award-text">WINNER-BEST FONT 2021-SELF PROCLAIMED AWARDS</span>
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <!-- Left Content -->
-            <div class="hero-content">
-                <div class="award-badge">
-                    <span>★ WINNER - BEST ALBUM 2021 - SELF PROCLAIMED AWARDS ★</span>
-                </div>
-
-                <h1 class="hero-title">
-                    <span class="title-main">groove</span>
-                </h1>
-
-                <p class="subtitle">an 'are'ware Winamp font</p>
-
-                <div class="artists-credits">
-                    <div class="credits-column">
-                        <p class="artist-name">Brad Wilson</p>
-                        <p class="artist-name">Roger Vantino</p>
-                        <p class="artist-name">Samantha Joe</p>
-                    </div>
-                    <div class="credits-column right">
-                        <p class="artist-name">Stacy Hector</p>
-                        <p class="artist-name">Lawrence Kings</p>
-                        <p class="artist-name">Timothy Goodman</p>
-                    </div>
-                </div>
-
-                <button class="cta-btn">Ouvir Agora</button>
-
-                <!-- Bottom Logos -->
-                <div class="bottom-logos">
-                    <div class="logo-item">
-                        <div class="bb-logo">BB</div>
-                        <span class="logo-text">Digital<br>Cinema</span>
-                    </div>
-                    <div class="logo-item">
-                        <div class="globe-icon">🌐</div>
-                    </div>
-                </div>
+        <main class="main-content">
+            <div class="title-section">
+                <h1 class="main-title">stringy</h1>
+                <p class="subtitle">an 'Ian Hunan' Wimangp font</p>
             </div>
 
-            <!-- Center Image -->
-            <div class="hero-image">
-                <div class="image-overlay"></div>
-                
-                <!-- Person SVG Illustration -->
-                <svg class="person-illustration" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Silhouette of person with headphones -->
-                    <defs>
-                        <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#1a0a0a;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#8B0000;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#1a0a0a;stop-opacity:1" />
-                        </linearGradient>
-                        
-                        <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#c19267;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#d4a574;stop-opacity:1" />
-                        </linearGradient>
-
-                        <filter id="glow">
-                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                            <feMerge>
-                                <feMergeNode in="coloredBlur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-                    </defs>
-
-                    <!-- Hair -->
-                    <ellipse cx="200" cy="180" rx="85" ry="110" fill="url(#hairGrad)"/>
-                    <path d="M 115 170 Q 110 200 115 230 L 130 230 Q 125 200 130 170 Z" fill="url(#hairGrad)"/>
-                    <path d="M 285 170 Q 290 200 285 230 L 270 230 Q 275 200 270 170 Z" fill="url(#hairGrad)"/>
-                    
-                    <!-- Face -->
-                    <ellipse cx="200" cy="210" rx="65" ry="85" fill="url(#skinGrad)"/>
-                    
-                    <!-- Neck -->
-                    <rect x="175" y="280" width="50" height="40" fill="url(#skinGrad)"/>
-                    
-                    <!-- Headphones -->
-                    <!-- Headband -->
-                    <path d="M 120 180 Q 200 140 280 180" fill="none" stroke="#D4A140" stroke-width="8" stroke-linecap="round"/>
-                    <path d="M 125 182 Q 200 145 275 182" fill="none" stroke="#8B7355" stroke-width="3"/>
-                    
-                    <!-- Left ear cup -->
-                    <ellipse cx="125" cy="210" rx="35" ry="40" fill="#D4A140"/>
-                    <ellipse cx="125" cy="210" rx="28" ry="33" fill="#2d2416"/>
-                    <circle cx="125" cy="210" r="18" fill="#8B7355" opacity="0.5"/>
-                    
-                    <!-- Right ear cup -->
-                    <ellipse cx="275" cy="210" rx="35" ry="40" fill="#D4A140"/>
-                    <ellipse cx="275" cy="210" rx="28" ry="33" fill="#2d2416"/>
-                    <circle cx="275" cy="210" r="18" fill="#8B7355" opacity="0.5"/>
-                    
-                    <!-- Sunglasses -->
-                    <rect x="155" y="195" width="40" height="25" rx="3" fill="#1a1a1a" opacity="0.9"/>
-                    <rect x="205" y="195" width="40" height="25" rx="3" fill="#1a1a1a" opacity="0.9"/>
-                    <rect x="195" y="205" width="10" height="3" fill="#8B7355"/>
-                    <line x1="150" y1="207" x2="155" y2="207" stroke="#8B7355" stroke-width="3"/>
-                    <line x1="245" y1="207" x2="250" y2="207" stroke="#8B7355" stroke-width="3"/>
-                    
-                    <!-- Nose highlight -->
-                    <ellipse cx="200" cy="225" rx="8" ry="12" fill="#c19267" opacity="0.5"/>
-                    
-                    <!-- Lips -->
-                    <ellipse cx="200" cy="250" rx="18" ry="8" fill="#a0522d" opacity="0.7"/>
-                    
-                    <!-- Hand near face -->
-                    <ellipse cx="240" cy="270" rx="25" ry="20" fill="url(#skinGrad)" transform="rotate(25 240 270)"/>
-                    <ellipse cx="255" cy="265" rx="12" ry="18" fill="url(#skinGrad)" transform="rotate(45 255 265)"/>
-                    <ellipse cx="245" cy="285" rx="10" ry="15" fill="url(#skinGrad)" transform="rotate(15 245 285)"/>
-                    
-                    <!-- Clothing -->
-                    <path d="M 150 320 L 175 310 L 200 320 L 225 310 L 250 320 L 250 450 L 150 450 Z" fill="#8B0000" opacity="0.7"/>
-                    
-                    <!-- Jacket details -->
-                    <rect x="190" y="330" width="20" height="90" fill="#D4A140" opacity="0.3"/>
-                    
-                    <!-- Shoulder detail -->
-                    <ellipse cx="150" cy="340" rx="20" ry="30" fill="#1a0a0a" opacity="0.3"/>
-                    <ellipse cx="250" cy="340" rx="20" ry="30" fill="#1a0a0a" opacity="0.3"/>
-
-                    <!-- Light effects -->
-                    <ellipse cx="180" cy="200" rx="30" ry="40" fill="#FFD700" opacity="0.15" filter="url(#glow)"/>
-                    <ellipse cx="220" cy="200" rx="30" ry="40" fill="#FFD700" opacity="0.15" filter="url(#glow)"/>
-                </svg>
+            <div class="image-container">
+                <img src="img1.png" alt="Retrowave Style" class="main-image">
             </div>
 
-            <!-- Right Content -->
-            <div class="hero-right">
-                <div class="rating-badge">
-                    <div class="rating-letter">R</div>
-                    <div class="rating-text">
-                        <p>RESTRICTED</p>
-                        <p class="rating-small">Under 17 requires accompanying parent or adult guardian</p>
-                    </div>
+            <div class="credits">
+                <div class="credits-left">
+                    <p>Brad Wilson</p>
+                    <p>Roger Vantino</p>
+                    <p>Samantha Joe</p>
+                </div>
+                <div class="credits-right">
+                    <p>Stacy Hector</p>
+                    <p>Lawrence Kings</p>
+                    <p>Timothy Goodman</p>
                 </div>
             </div>
-        </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logos">
+                <div class="bb-logo">
+                    <span class="bb-text">BB</span>
+                    <span class="bb-subtext">modern<br>digital</span>
+                </div>
+                <div class="globe-icon">🌐</div>
+            </div>
+            <div class="rating">
+                <span class="rating-box">R</span>
+                <span class="rating-text">RESTRICTED<br>UNDER 17 REQUIRES ACCOMPANYING<br>PARENT OR ADULT GUARDIAN</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringy - Retrowave Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="produced">Produced by</span>
+                <span class="brand">Wimangp</span>
+            </div>
+            <div class="award">
+                <span class="award-text">WINNER-BEST FONT 2021-SELF PROCLAIMED AWARDS</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="title-section">
+                <h1 class="main-title">stringy</h1>
+                <p class="subtitle">an 'Ian Hunan' Wimangp font</p>
+            </div>
+
+            <div class="image-container">
+                <img src="img1.png" alt="Retrowave Style" class="main-image">
+            </div>
+
+            <div class="credits">
+                <div class="credits-left">
+                    <p>Brad Wilson</p>
+                    <p>Roger Vantino</p>
+                    <p>Samantha Joe</p>
+                </div>
+                <div class="credits-right">
+                    <p>Stacy Hector</p>
+                    <p>Lawrence Kings</p>
+                    <p>Timothy Goodman</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logos">
+                <div class="bb-logo">
+                    <span class="bb-text">BB</span>
+                    <span class="bb-subtext">modern<br>digital</span>
+                </div>
+                <div class="globe-icon">🌐</div>
+            </div>
+            <div class="rating">
+                <span class="rating-box">R</span>
+                <span class="rating-text">RESTRICTED<br>UNDER 17 REQUIRES ACCOMPANYING<br>PARENT OR ADULT GUARDIAN</span>
+            </div>
+        </footer>
     </div>
 
     <script src="script.js"></script>
